@@ -1,0 +1,10 @@
+h1{
+    color: blue;
+}
+section>button{
+    background-color: aqua;
+}
+div>button{
+    background-color: black;
+    color: white;
+}

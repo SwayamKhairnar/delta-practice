@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#check{
+    display: none;
+}
+body{
+    background-image: url(canp1.jpg);
+    height: 100vh;
+    background-position: center;
+}
+.main_box{
+    background-color: white;
+    height: 100vh;
+    width: 350px;
+    opacity: 0.1;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+.main_box .btn_one{
+    position: absolute;
+    margin-left: 20px;
+    color: black;
+    font-size: 30px;
+}
+.main_box .sidebar_menu .logo a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;    
+}
+.main_box .sidebar_menu .logo {
+    position: absolute;
+    margin-left: 80px;
+    
+}
+.main_box .sidebar_menu .btn_two {
+
+    position: absolute;
+    margin-left: 310px;
+    color: black;
+    font-size: 30px;
+
+}
+.sidebar_menu .menu ul li a {
+    display: block;              /* Makes the anchor tag behave like a box */
+    padding: 10px 15px;
+    border-radius: 8px;          /* Optional: Rounded corners */
+    transition: all 0.3s ease;   /* Smooth animation */
+}
+.main_box .sidebar_menu>.social_media{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 630px;    
+}
+.main_box .sidebar_menu>.social_media>ul{
+    display: flex;
+}
+.main_box .sidebar_menu>.social_media>ul>li{
+    list-style: none;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    opacity: 0.5;
+}
+.social_media>ul li a{
+    color: black;
+    opacity: 0.8;
+}
+.btn_one:hover,.btn_two:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.main_box .sidebar_menu .social_media ul li:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.sidebar_menu .menu ul li:hover{
+    
+    border: 2px solid black;
+}   

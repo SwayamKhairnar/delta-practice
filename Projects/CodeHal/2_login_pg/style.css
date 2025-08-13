@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    padding-top: 2%;
+}
+
+    
+.navigation {
+    font-size: 24px;
+    font-weight:400;
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+.search {
+    position: relative;
+    display: inline-block;
+}
+
+.search input[type="text"] {
+    background: transparent;
+    padding: 10px 35px 10px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+.section_outer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+section {
+    color: white;
+    background-image:url(background.jpg);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:60vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    width: 40%;
+}
+
+.info>#heading{
+    font-size: 36px;
+    padding-bottom: 80px;
+    margin-top: -60px;
+}
+.info>h2,p{
+    margin-top: 10px;
+}
+.social{
+    color: black;
+    font-size: 24px;
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    
+}
+.social a{
+    transition: .3s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+.social a:hover{
+    transform: scale(1.1);
+}
+.sign_up {
+    margin-left:100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    width: 350px;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 450px;
+}
+.sign_up :nth-child(7),:nth-child(5),:nth-child(6){
+    max-height: 20px;
+    text-align: center;
+}
+.sign_up #sign_up{
+    font-size: 15px;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    transition: .2s ease-out;
+}
+.sign_up :nth-child(5) a{
+    color: white;
+    text-decoration: none;
+}
+
+.sign_up :nth-child(5) a:hover{
+    text-decoration: underline;
+}
+/* sign in link */
+.sign_up :nth-child(7) a{
+    color: white;
+    text-decoration: none;
+}
+.sign_up :nth-child(7) a:hover{
+    text-decoration: underline;
+}
+.sign_up #sign_up:hover{
+    transform: scale(1.1);
+    background-color: gray;
+}
+.sign_up h1{
+    font-size: 30px;
+    top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sign_up>div{
+
+    margin-bottom: 25px;
+}

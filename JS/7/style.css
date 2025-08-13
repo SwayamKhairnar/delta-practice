@@ -1,0 +1,34 @@
+/* Set the default font for the page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the main image */
+#mainImg {
+    width: 35%;
+}
+
+/* Style a content box */
+.box {
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    width: 300px;
+    padding: 10px;
+}
+
+/* Style links inside the box */
+.boxLink {
+    text-decoration: none;
+}
+
+/* Style old images */
+.oldImg {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+/* Style the description section */
+#description {
+    background-color: antiquewhite;
+}

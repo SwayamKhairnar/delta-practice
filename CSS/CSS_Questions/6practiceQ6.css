@@ -1,0 +1,35 @@
+
+section{
+    height: 500px;
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+}
+.red{
+    margin-top: 25%;
+    justify-self: center;
+    height:100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: red;
+}
+.yellow{
+    margin-top: 25%;
+    justify-self: center;
+    height:100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color:yellow;
+}.green{
+    margin-top: 25%;
+    justify-self: center;
+    height:100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: green;
+}

@@ -1,0 +1,10 @@
+#container{
+    background-color: antiquewhite;
+    height: 350px;
+    width: 100%;
+    display: flex;
+}
+div{
+    width: 14%;
+    height: 100%;  
+}

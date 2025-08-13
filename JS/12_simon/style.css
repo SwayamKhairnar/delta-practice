@@ -1,0 +1,51 @@
+/* Center header content */
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Center and wrap the boxes */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+}
+
+/* Base style for all boxes */
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.box:active {
+  transform: scale(0.95);
+}
+
+/* Individual box colors */
+#pink {
+  background-color: palevioletred;
+}
+
+#green {
+  background-color: green;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#purple {
+  background-color: purple;
+}
+.flash{
+  background-color: white !important;
+}

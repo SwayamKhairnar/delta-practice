@@ -1,0 +1,16 @@
+h1{
+    border: 2px solid black;
+    width: 50%;
+}
+.outer{
+    height: 800px;  
+    width: 800px;
+    background-color: aqua;
+}
+.inner{
+    
+    background-color: green;
+    height: 50%;
+    width: 50%;
+    justify-self: center;
+}

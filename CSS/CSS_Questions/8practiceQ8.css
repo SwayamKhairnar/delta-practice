@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Man,.Women{
+    display: inline-block;
+    margin: 20px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.Man:hover,.Women:hover{
+    box-shadow: 2px 2px 10px black;
+    transform: scale(1.02);
+    transition: .5s ease-out;
+}
+.Man{
+    background-color: pink;
+}
+.Women{
+    background-color: yellow;
+}
+#man_info,#women_info{
+    padding:50px;
+}
