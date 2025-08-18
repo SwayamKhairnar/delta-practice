@@ -1,28 +1,16 @@
-const express=require('express');
-const app=express();
-
+const expr=require("express");
+const app=expr();
 
 console.dir(app);
 
-let port=3000;
+port=8080;
 app.listen(port,()=>{
-    console.log(`Server is running on port ${port}`);
+    console.log("server is running fast")
 });
 
-// app.use((req,res)=>{
-//     console.log("req recieved");
-// //sending a responce after getting a req
-//     res.send({
-//         name:"swayam",
-//         height:"6 4'",
-//     })
-// }); 
-
-
-//using get
-app.get("/",(req,res)=>{
-    res.send("You contacted root path");
+app.use((req,res)=>{
+    console.log("request recieved")
+    //now to send a response use the res obj
+    res.send("This is what u get");
 });
-app.get("/apple",(req,res)=>{
-    res.send("U contacted apple page");
-});
+
