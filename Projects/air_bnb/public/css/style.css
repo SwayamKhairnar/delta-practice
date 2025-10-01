@@ -1,0 +1,161 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+/* navbar */
+.navbar{
+    height: 8vh;
+}
+.bi-compass{
+    color: red;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+    font-weight: 400 !important;
+}
+/* footer */
+footer {
+    height: 20vh;
+    background: linear-gradient(to right, #e3f2fd, #f8f9fa);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-top: 2px solid #dce3eb;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Social icons row */
+.f-info-socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.f-info-socials a {
+    font-size: 1.5rem;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.f-info-socials a:hover {
+    color: #0077b6; /* nice blue accent */
+    transform: scale(1.2);
+}
+
+/* Middle text */
+footer div:nth-child(2) {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Links row */
+.f-info-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.f-info-links a {
+    color: #444;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.f-info-links a:hover {
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
+}
+
+
+/* cards */
+/* Card container styling */
+/* Card base */
+.card {
+  border: none;
+  border-radius: 1rem !important;       /* smooth rounded corners */
+  overflow: hidden;          /* ensures image & content respect radius */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;              /* makes all cards equal height in row */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Image styling */
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+/* Card body */
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Title */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+/* Description text */
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;             /* pushes button to bottom */
+  margin-bottom: 0.75rem;
+}
+
+/* Price */
+.card-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #007BFF;           /* slightly bolder, attention-catching */
+  margin-bottom: 0.75rem;
+}
+
+/* Button */
+.card .btn {
+  background-color: #5C9ED6;
+  border-radius: 20px;
+  padding: 0.5rem 1.3rem;
+  font-size: 0.95rem;
+  border: none;
+  align-self: flex-start;    /* button sticks left */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.card .btn:hover ,.btn:click {
+  background-color: #4682A9;
+  transform: translateY(-2px);
+}
+
+/* Optional: spacing between cards using row gutters */
+.row.g-4 {
+  margin-top: 2rem;
+}
+
+#new_page{
+    overflow: hidden;
+}

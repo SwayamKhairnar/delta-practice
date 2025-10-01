@@ -1,0 +1,93 @@
+<% layout("/layout/boilerplate") %>
+<body id="edit_page">
+    <div class="container my-5">
+        <form method="post" action="/listings/<%= listing.id %>?_method=PUT">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <!-- Form Header -->
+                    <h3 class="text-center mb-4">Edit Listing (ID: <%= listing.id %>)</h3>
+
+                    <!-- Title -->
+                    <div class="mb-3">
+                        <input type="text" name="listing[title]" value="<%= listing.title %>" placeholder="Enter Title" class="form-control" required>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-3">
+                        <textarea name="listing[description]" placeholder="Enter Description" class="form-control" rows="4" required><%= listing.description %></textarea>
+                    </div>
+
+                    <!-- Image URL -->
+                    <div class="mb-3">
+                        <input type="text" name="listing[image][url]" value="<%= listing.image.url %>" placeholder="Enter Image URL" class="form-control" required>
+                    </div>
+
+                    <!-- Price & Location Row -->
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <input type="number" name="listing[price]" value="<%= listing.price %>" placeholder="Enter Price" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="listing[location]" value="<%= listing.location %>" placeholder="Enter Location" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <!-- Country -->
+                    <div class="mb-4">
+                      <select name="listing[country]" class="form-select" required>
+                        <option value="" disabled selected>Select Country</option>
+                        <option value="India">India</option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Japan">Japan</option>
+                        <option value="China">China</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Finland">Finland</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="South Korea">South Korea</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Philippines">Philippines</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Ireland">Ireland</option>
+                        <!-- Add more countries as needed -->
+                      </select>
+                    </div>
+
+                    <!-- Submit Button aligned bottom-right -->
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-dark px-4">Update</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
